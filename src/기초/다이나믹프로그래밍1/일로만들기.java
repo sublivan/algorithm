@@ -1,4 +1,4 @@
-package 기초.자료구조1;
+package 기초.다이나믹프로그래밍1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

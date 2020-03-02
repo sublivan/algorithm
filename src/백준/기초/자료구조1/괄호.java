@@ -1,4 +1,4 @@
-package 기초.자료구조1;
+package 백준.기초.자료구조1;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package 기초.다이나믹프로그래밍1;
+package 백준.기초.다이나믹프로그래밍1;
 
 
 import java.io.*;
@@ -27,6 +27,7 @@ public class 카드구매하기 {
                 dp[i] = Math.max(dp[i], dp[i-j]+pn[j]);
             }
         }
+
 
         wr.write(dp[n]+"");
         wr.close();

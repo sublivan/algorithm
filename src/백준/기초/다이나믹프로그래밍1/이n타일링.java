@@ -1,4 +1,4 @@
-package 기초.다이나믹프로그래밍1;
+package 백준.기초.다이나믹프로그래밍1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

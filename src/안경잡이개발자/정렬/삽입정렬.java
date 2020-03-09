@@ -1,4 +1,4 @@
-package 안경잡이개발자;
+package 안경잡이개발자.정렬;
 
 import java.util.Arrays;
 //O(N^2)

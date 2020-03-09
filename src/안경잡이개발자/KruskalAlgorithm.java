@@ -11,7 +11,7 @@ package 안경잡이개발자;
  */
 import java.util.*;
 
-public class kruskalAlgorithm {
+public class KruskalAlgorithm {
     //부모 노드를 가져옴
     static int getParent(int[] set,int x){
         if(set[x] == x) return x;

@@ -17,6 +17,4 @@ import java.util.Vector;
  */
 public class 강한결합요소 {
 
-
-
 }

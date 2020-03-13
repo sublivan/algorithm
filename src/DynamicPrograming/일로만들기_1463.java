@@ -12,7 +12,7 @@ X가 2로 나누어 떨어지면, 2로 나눈다.
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class 일로만들기 {
+public class 일로만들기_1463 {
     static int[] dp;
     public static void main(String[] args) throws Exception{
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));

@@ -1,4 +1,4 @@
-package DynamicPrograming.oneMore;
+package DynamicPrograming;
 /*
 Bottom-up: 반복문 버전
 

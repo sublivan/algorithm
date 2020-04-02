@@ -22,9 +22,9 @@ public class FullTiling_2133 {
         if(x == 2) return 3;
         if(d[x] != 0) return d[x];
         int result = 3 * dp(x-2);
-        //짝수 일때, 새로운 방법 2개씩 생성됨
+
         for(int i=3 ; i<=x ; i++){
-            if(i%2 ==0)
+            if(i%2 ==0) //짝수 일때, 새로운 방법 2개씩 생성됨
                 result += 2*dp(x-i);
         }
         return d[x] = result;

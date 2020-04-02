@@ -5,7 +5,7 @@ package DynamicPrograming;
  */
 import java.io.*;
 
-public class 더하기123 {
+public class 더하기123_9095 {
 
     public static void main(String[] args) throws IOException {
 

@@ -1,5 +1,9 @@
 package DynamicPrograming;
-
+//11726 2XN타일링
+/*
+BOTTOM UP
+2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오.
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

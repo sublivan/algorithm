@@ -28,6 +28,7 @@ public class 한줄로서기_1138 {
             //해당 사람의 위치를 찾게 해줄 변수
             int count=0;
 
+
             for (int j = 0; j< n; j++) {
                 if (count == x && result[j] == 0) {
                     result[j] = i;

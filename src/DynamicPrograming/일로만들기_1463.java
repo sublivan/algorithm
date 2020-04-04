@@ -25,7 +25,7 @@ public class 일로만들기_1463 {
     static int calculate(int num){
         if(num <2)
             return 0;
-        if(dp[num] >0)
+        if(dp[num] > 0)
             return dp[num];
 
         dp[num] =calculate(num-1)+1;

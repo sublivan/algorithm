@@ -19,7 +19,7 @@ public class 쉬운계단수 {
 
 
         for(int i=1; i<=9;i++){
-            dp[1][i]= 1;
+            dp[1][i]= 1; // 1일 때 초기화(1~9까지)-> 2부터 동적으로 구할 수 있음
         }
 
         for(int i=2; i <= n;i++){
@@ -27,8 +27,8 @@ public class 쉬운계단수 {
             for(int j=1; j <= 9; j++){
                 dp[i][j]= (dp[i-1][j-1]+dp[i-1][j+1])%10007;
             }
-
         }
+
         long sum=0;
         for(int i=0; i<10;i++){
             sum +=dp[n][i];

@@ -18,6 +18,7 @@ public class 로프_2217 {
 
         Arrays.sort(rope,0,n);
 
+        
         int max=0;
 
         for(int i=0; i<n ;i++){

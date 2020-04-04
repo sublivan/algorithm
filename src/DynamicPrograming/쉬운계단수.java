@@ -17,6 +17,7 @@ public class 쉬운계단수 {
 
         int n =Integer.parseInt(br.readLine());
 
+
         for(int i=1; i<=9;i++){
             dp[1][i]= 1;
         }

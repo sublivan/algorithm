@@ -5,7 +5,7 @@ package DynamicPrograming;
 3×N 크기의 벽을 2×1, 1×2 크기의 타일로 채우는 경우의 수를 구해보자.
  */
 import java.io.*;
-public class FullTiling_2133 {
+public class 타일채우기_2133 {
     static int[] d=new int[31];
 
     public static void main(String[] args) throws IOException {

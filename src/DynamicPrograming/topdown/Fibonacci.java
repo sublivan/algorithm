@@ -1,4 +1,4 @@
-package DynamicPrograming;
+package DynamicPrograming.topdown;
 
 import java.io.*;
 

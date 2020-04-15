@@ -1,4 +1,4 @@
-package DynamicPrograming;
+package DynamicPrograming.topdown;
 
 //11726 2XN타일링
 /*

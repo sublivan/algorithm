@@ -6,12 +6,9 @@ package DynamicPrograming;
 import java.io.*;
 
 public class 더하기123_9095 {
-
     public static void main(String[] args) throws IOException {
-
         BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter wr =new BufferedWriter(new OutputStreamWriter(System.out));
-
 
         int t = Integer.parseInt(br.readLine());
         int n;

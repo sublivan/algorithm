@@ -3,7 +3,7 @@ package DynamicPrograming;
 //14852 타일채우기3
 import java.io.*;
 
-public class FullTiling3_14852 {
+public class 타일채우기3_14852 {
 
     static long[][] d=new long[1000001][2];
 

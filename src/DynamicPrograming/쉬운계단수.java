@@ -17,7 +17,6 @@ public class 쉬운계단수 {
 
         int n =Integer.parseInt(br.readLine());
 
-
         for(int i=1; i<=9;i++){
             dp[1][i]= 1; // 1일 때 초기화(1~9까지)-> 2부터 동적으로 구할 수 있음
         }

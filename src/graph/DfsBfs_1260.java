@@ -41,6 +41,7 @@ public class DfsBfs_1260 {
         Arrays.fill(visit,false);
         bfs(a,visit,v);
     }
+
     static void dfs(ArrayList<Integer>[] a, boolean[] c,int v){
         if(c[v]){
             return;
@@ -56,8 +57,6 @@ public class DfsBfs_1260 {
                 dfs(a,c,x);
             }
         }
-
-
     }
 
     static void bfs(ArrayList<Integer>[] a, boolean[] c,int v){
@@ -75,7 +74,7 @@ public class DfsBfs_1260 {
                     q.add(vv);
                     c[vv] = true;
                 }
-            }
+    }
         }
 
     }

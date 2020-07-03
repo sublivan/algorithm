@@ -51,24 +51,25 @@ public class 섬의개수4963 {
            System.out.println(count);
        }
     }
-    static void dfs(int x, int y){
+    static void dfs(int x, int y) {
         visited[x][y] = 1;
 
 
-        for(int i=0; i < 8; i++){
+        for (int i = 0; i < 8; i++) {
 
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            if(nx >=0 && nx < w && ny >=0 && ny < h){
-                if(map[nx][ny] ==1 && visited[nx][ny] ==0){
+            if (nx >= 0 && nx < w && ny >= 0 && ny < h) {
+                if (map[nx][ny] == 1 && visited[nx][ny] == 0) {
                     dfs(nx, ny);
                 }
             }
         }
 
     }
-
-
-
 }
+
+/*
+code.plus/course/4
+ */

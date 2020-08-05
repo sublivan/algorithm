@@ -1,4 +1,4 @@
-package 안경잡이개발자;
+package 알고리즘;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

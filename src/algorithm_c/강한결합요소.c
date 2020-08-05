@@ -6,31 +6,31 @@
 
 using namespace std;
 
-int id, d[MAX]; //°¢ ³ëµå¸¶´Ù °íÀ¯ÀÇ ¹øÈ£ ÇÒ´çÀ§ÇØ  
-bool finished[MAX]; // Æ¯Á¤ÇÑ ³ëµå¿¡´ëÇÑ dfs °¡ ³¡³´´ÂÁö È®ÀÎ 
-vector<int> a[MAX]; //ÀÎÁ¢³ëµå ´ã´Â ¹è¿­ 
-vector<vector<int> > SCC; //ÇÑ ±×·¡ÇÁ¿¡ ¿©·¯°³ ³ª¿Ã¼ö ÀÖ±â ¶§¹®¿¡ 2Â÷¿ø¹è¿­·Î »ı¼º  
-stack<int> s; //scc¸¦ È°¿ëÇÏ±âÀ§ÇØ 
+int id, d[MAX]; //ê° ë…¸ë“œë§ˆë‹¤ ê³ ìœ ì˜ ë²ˆí˜¸ í• ë‹¹ìœ„í•´  
+bool finished[MAX]; // íŠ¹ì •í•œ ë…¸ë“œì—ëŒ€í•œ dfs ê°€ ëë‚«ëŠ”ì§€ í™•ì¸ 
+vector<int> a[MAX]; //ì¸ì ‘ë…¸ë“œ ë‹´ëŠ” ë°°ì—´ 
+vector<vector<int> > SCC; //í•œ ê·¸ë˜í”„ì— ì—¬ëŸ¬ê°œ ë‚˜ì˜¬ìˆ˜ ìˆê¸° ë•Œë¬¸ì— 2ì°¨ì›ë°°ì—´ë¡œ ìƒì„±  
+stack<int> s; //sccë¥¼ í™œìš©í•˜ê¸°ìœ„í•´ 
 
 
-//DFS ´Â ÃÑ Á¤Á¡ÀÇ °¹¼ö¸¸Å­ ½ÇÇàµË´Ï´Ù  
+//DFS ëŠ” ì´ ì •ì ì˜ ê°¯ìˆ˜ë§Œí¼ ì‹¤í–‰ë©ë‹ˆë‹¤  
 int dfs(int x){
-	//³ëµå¸¶´Ù °íÀ¯ÇÑ ¹øÈ£¸¦ ÇÒ´ç 
+	//ë…¸ë“œë§ˆë‹¤ ê³ ìœ í•œ ë²ˆí˜¸ë¥¼ í• ë‹¹ 
 	d[x] = ++id;
-	//½ºÅÃ¿¡ ÀÚ±â ÀÚ½ÅÀ» »ğÀÔ  
+	//ìŠ¤íƒì— ìê¸° ìì‹ ì„ ì‚½ì…  
 	s.push(x);
 	
 	int parent = d[x]; 
 	
 	for(int i =0; i< a[x].size(); i++){
 		int y= a[x][i]; 
-		//¹æ¹®ÇÏÁö¾ÊÀºÀÌ¿ô 
+		//ë°©ë¬¸í•˜ì§€ì•Šì€ì´ì›ƒ 
 		if(d[y] == 0) parent = min(parent,dfs(y)); 
-		//Ã³¸®ÁßÀÎ ÀÌ¿ô  
+		//ì²˜ë¦¬ì¤‘ì¸ ì´ì›ƒ  
 		else if(!finished[y]) parent =min(parent, d[y]);
 	}
 	
-	//ºÎ¸ğ³ëµå°¡ ÀÚ±â ÀÚ½ÅÀÎ °æ¿ì  
+	//ë¶€ëª¨ë…¸ë“œê°€ ìê¸° ìì‹ ì¸ ê²½ìš°  
 	if(parent == d[x]){
 		vector<int> scc;
 		while(1){
@@ -42,14 +42,14 @@ int dfs(int x){
 		}
 		SCC.push_back(scc); 
 	} 
-	//ÀÚ½ÅÀÇ ºÎ¸ğ°ªÀ» ¹İÈ¯  
+	//ìì‹ ì˜ ë¶€ëª¨ê°’ì„ ë°˜í™˜  
 	return parent;
 }
 
 
 
 int main(void){
-	int v =11; // Á¤Á¡ÀÇ °³¼ö
+	int v =11; // ì •ì ì˜ ê°œìˆ˜
 	a[1].push_back(2);
 	a[2].push_back(3);
 	a[3].push_back(1);
@@ -69,9 +69,9 @@ int main(void){
 		if(d[i] == 0) dfs(i);
 	}
 	
-	printf("SCC ÀÇ °³¼ö: %d\n",SCC.size());
+	printf("SCC ì˜ ê°œìˆ˜: %d\n",SCC.size());
 	for(int i =0; i<SCC.size(); i++){
-		printf("%d ¹øÂ° scc: ",i+1);
+		printf("%d ë²ˆì§¸ scc: ",i+1);
 		
 		for(int j=0;j<SCC[i].size(); j++){
 			printf("%d ", SCC[i][j]);
@@ -81,7 +81,6 @@ int main(void){
 	
 	return 0;
 } 
-
 
 
 

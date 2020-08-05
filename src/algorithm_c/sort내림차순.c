@@ -3,9 +3,9 @@
 
 using namespace std;
 
-//오름차순 
+
 bool compare(int a,int b){
-	return a< b;
+	return a > b;
 }
 int main(void){
 	

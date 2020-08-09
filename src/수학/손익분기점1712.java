@@ -9,11 +9,11 @@ public class 손익분기점1712 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        int n= 1;
-        while(a+b*n >= c*n)
-        {
-            n++;
-        }
-        System.out.println(n);
+        if(b >= c)
+            System.out.println(-1);
+        else
+            System.out.println(a/(c - b) + 1);
+        //수식을 계산해보면 a/(c-b> < x
+        //손익분기점이 처음 발생할때 이므로 1을 더해서 계산
     }
 }

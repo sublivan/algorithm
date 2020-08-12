@@ -1,9 +1,9 @@
-package 수학;
+package 재귀;
 
 
 import java.util.Scanner;
 
-public class 팩토리얼 {
+public class 팩토리얼10872 {
 
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);

@@ -1,11 +1,5 @@
 package 정렬;
 
-<<<<<<< HEAD
-public class 좌표정렬하기2_11651 {
-    public static void main(String[] args)
-    {
-
-=======
 import java.util.*;
 import java.io.*;
 
@@ -38,6 +32,5 @@ public class 좌표정렬하기2_11651 {
         {
             System.out.println(map[i][0] + " " + map[i][1]);
         }
->>>>>>> 09e6b57f4429492f5a08fee833c37838d5bdb96b
     }
 }

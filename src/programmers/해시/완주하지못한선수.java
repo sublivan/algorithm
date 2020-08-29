@@ -1,4 +1,4 @@
-package programmers;
+package programmers.해시;
 
 import java.util.Arrays;
 

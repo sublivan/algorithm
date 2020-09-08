@@ -25,7 +25,6 @@ public class 에라토스테네스의체 {
         for(int i=1; i<=number; i++){
             a[i] = i;
         }
-
         //1은 자기 자신 밖에 없기때문에 제외
         // 2부터 i에 배수들을 삭제
         for(int i =2; i<=number; i++){

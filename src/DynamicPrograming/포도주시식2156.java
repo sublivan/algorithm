@@ -18,8 +18,8 @@ public class 포도주시식2156 {
         }
 
         //1)
-        for(int i=1; i<3 && i<=n;i++){
-            if(i ==1){
+        for(int i = 1; i < 3 && i <= n; i++){
+            if(i == 1){
                 dp[i] = wine[i];
             }
             else
@@ -29,9 +29,9 @@ public class 포도주시식2156 {
 
         int result=0;
         //2)
-        for(int i=3;i<=n;i++){
-            result = Math.max(dp[i-2]+wine[i], dp[i-1]);
-            result = Math.max(result, wine[i]+wine[i-1]+dp[i-3]);
+        for(int i = 3;i <= n; i++){
+            result = Math.max(dp[i-2] + wine[i], dp[i-1]);
+            result = Math.max(result, wine[i] + wine[i-1] + dp[i-3]);
             dp[i] = result;
         }
 
@@ -45,6 +45,7 @@ public class 포도주시식2156 {
 
 포도주 세개를 연속으로 먹을 수 없다는것을 고려해야한다
 즉 현재 먹는 포도주의 합이 최대일 경우를 생각해보면
+
 2)
  1. 내가 현재 포도주를 먹지 않았을경우
     = dp[i-1]
@@ -52,6 +53,4 @@ public class 포도주시식2156 {
     = wine[i] + dp[i-2]
  3. 현재의 포도주와 이전 포도주를 마신경우
     = wine[i] + wine[i-1] + dp[i-3]
-
-
  */

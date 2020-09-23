@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 /*
 2018 KAKAO BLIND RECRUITMENT

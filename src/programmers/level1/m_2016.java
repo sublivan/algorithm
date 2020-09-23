@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 public class m_2016 {
     public static void main(String[] args)

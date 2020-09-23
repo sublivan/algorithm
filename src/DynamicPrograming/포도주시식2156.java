@@ -12,7 +12,7 @@ public class 포도주시식2156 {
         int dp[] =new int[10001];
         int wine[] =new int[10001];
 
-        for(int i=1;i<=n;i++){
+        for(int i = 1;i <= n; i++){
             input= sc.nextInt();
             wine[i] = input;
         }
@@ -25,16 +25,16 @@ public class 포도주시식2156 {
             else
                 dp[i] = wine[i] + wine[i-1];
         }
-
-
+        System.out.print(dp[1] + " ");
+        System.out.print(dp[2] + " ");
         int result=0;
         //2)
         for(int i = 3;i <= n; i++){
             result = Math.max(dp[i-2] + wine[i], dp[i-1]);
             result = Math.max(result, wine[i] + wine[i-1] + dp[i-3]);
             dp[i] = result;
+            System.out.print(dp[i] + " ");
         }
-
         System.out.println(dp[n]);
     }
 }

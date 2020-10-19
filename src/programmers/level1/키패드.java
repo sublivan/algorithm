@@ -3,6 +3,7 @@ package programmers.level1;
 public class 키패드 {
     private class Point{
         int x, y;
+
         public Point(int x, int y)
         {
             this.x = x;
@@ -11,11 +12,11 @@ public class 키패드 {
     }
 
     public String solution(int[] numbers, String hand) {
-        StringBuilder sb = new StringBuilder();
+        Point[] pad;
         int dl, dr;
-        dl = dr = 0;
+        StringBuilder sb;
 
-        Point[] pad = new Point[10];
+        pad = new Point[10];
         pad[0] = new Point(3, 1);
         pad[1] = new Point(0, 0);
         pad[2] = new Point(0, 1);
@@ -28,7 +29,8 @@ public class 키패드 {
         pad[9] = new Point(2, 2);
         Point L = new Point(3, 0);
         Point R = new Point(3, 2);
-
+        sb = new StringBuilder();
+        dl = dr = 0;
         for (int num : numbers)
         {
             if (num == 1 || num == 4 || num == 7)

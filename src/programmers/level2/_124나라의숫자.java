@@ -38,4 +38,8 @@ String numbers = {"4", "1", "2};
 변환 4
 1 - 1 = 0
 루프 탈출
+
+StringBuilder
+    - .insert(index, value);
+    index 위치에 value 값을 집어 넣는다.
  */

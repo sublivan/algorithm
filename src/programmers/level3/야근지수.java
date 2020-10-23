@@ -23,3 +23,13 @@ public class 야근지수{
         return answer;
     }
 }
+/*
+가장 작업량이 많은 것을 하나씩 해치우는게 포인트
+
+우선순위큐를 사용하였다.
+우선순위 큐는 오름차순
+내림차순으로 변경하기 위해서는
+Collections.reverseOrder()를 사용해야 한다.
+
+PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+ */

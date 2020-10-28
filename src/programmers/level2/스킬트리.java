@@ -57,6 +57,6 @@ class Solution {
 
 3. 조건2) 스킬을 찾지 못했을 때, 다음 스킬이 존재하면 안된다.
 스킬을 찾지 못한 경우 bool find를 false로 하고 하나의 스킬에 대한 전체 스킬트리 탐색을 마쳤을 떄,
-if(!ifind) notLearn=true로 한다.
-다음 스킬을 검사할 떄, notLearn이 true인데 발견된다면 비정상 스킬트리이다.
+if(!ifind) learn= false로 한다.
+다음 스킬을 검사할 떄, learn이 false인데 발견된다면 비정상 스킬트리이다.
 */

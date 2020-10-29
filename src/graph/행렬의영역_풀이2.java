@@ -2,13 +2,22 @@ package graph;
 
 import java.util.*;
 //2020하반기 nhn pre-test 1차 모의시험
-public class 행령의영역_풀이2 {
+public class 행렬의영역_풀이2 {
+
 
     private static int[][] visited;
     private static int cnt;
     private static int[] X = {-1, 0, 1, 0}; // 좌 상 우 하
     private static int[] Y = {0, 1, 0, -1}; // 좌 상 우 하
 
+    public static void main(String[] args) {
+        int[][] map = {{1,1,1,0,1},
+                {1,1,0,0,1},
+                {1,0,1,1,0},
+                {0,0,1,1,1},
+                {0,0,1,1,1}};
+        solution(5,map);
+    }
     private static void solution(int sizeOfMatrix, int[][] matrix) {
         visited = new int[sizeOfMatrix][sizeOfMatrix];
         List<Integer> matrix_list = new ArrayList<>();
@@ -59,12 +68,5 @@ public class 행령의영역_풀이2 {
         cnt++;
     }
 
-    public static void main(String[] args) {
-        int[][] map = {{1,1,1,0,1},
-                {1,1,0,0,1},
-                {1,0,1,1,0},
-                {0,0,1,1,1},
-                {0,0,1,1,1}};
-        solution(5,map);
-    }
+
 }

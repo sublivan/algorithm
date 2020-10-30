@@ -1,9 +1,7 @@
-package programmers;
+package programmers.level2;
 
 //2018 KAKAO BLIND RECRUITMENT
 //https://programmers.co.kr/learn/courses/30/lessons/17683
-
-import java.util.*;
 
 public class 방금그곡 {
     public String solution(String m, String[] musicinfos) {

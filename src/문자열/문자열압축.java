@@ -10,7 +10,6 @@ package 문자열;
 public class 문자열압축 {
     public static void main(String[] args) {
         String[] input = {"aabccccaaa", "", "abcdee"};
-
         for (String value : input)
         {
             System.out.println(solution(value));

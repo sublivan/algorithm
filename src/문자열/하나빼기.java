@@ -11,7 +11,7 @@ public class 하나빼기 {
 
 	public static void main(String[] args) {
 		String[] s1 = {"pale", "pales", "pale", "pale", "pppa", "pp", "pales"};
-		String[] s2 = {"ple", "pale", "bale", "bake", "ppppp", "aaa", "apel"};
+		String[] s2 = {"ple", "pale", "bale", "bake", "pppp", "aaa", "apel"};
 
 		for (int i = 0; i < s1.length; i++) {
 			boolean answer;

@@ -56,6 +56,9 @@ public class 행렬회전 {
 
 
 /*
+참고:
+https://hsdevelopment.tistory.com/298
+
 회전에는 인덱스 활용이 중요하다
 
 예를 들어,

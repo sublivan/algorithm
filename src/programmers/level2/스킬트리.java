@@ -1,4 +1,5 @@
 package programmers.level2;
+
 import java.util.*;
 
 public class 스킬트리 {

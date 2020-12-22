@@ -1,7 +1,7 @@
-
+package programmers.level2;
 import java.util.*;
 
-class Solution {
+public class 스킬트리 {
 	public int solution(String skill, String[] skill_trees) {
 
 		String[] skill_set = skill.split("");

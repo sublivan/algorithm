@@ -1,20 +1,20 @@
 package programmers.DFS_BFS;
 
-public class 타켓넘버 {
+public class 타겟넘버 {
     public static void main(String[] args) {
         int[] numbers = {1, 1, 1, 1, 1};
         int target = 3;
-        System.out.println(solution(numbers, target));
+        System.out.println(new 타겟넘버().solution(numbers, target));
     }
 
-    public static int solution(int[] numbers, int target) {
+    public int solution(int[] numbers, int target) {
         int answer = 0;
         answer += dfs(numbers, 1, numbers[0], target);
         answer += dfs(numbers, 1, -numbers[0], target);
         return answer;
     }
 
-    private static int dfs(int[] numbers, int index, int prev, int target) {
+    private int dfs(int[] numbers, int index, int prev, int target) {
         if (index == numbers.length) {
             if (target == prev)
                 return 1;

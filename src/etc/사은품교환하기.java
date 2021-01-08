@@ -1,4 +1,4 @@
-package goorm;
+package etc;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -18,7 +18,6 @@ public class 사은품교환하기 {
             Long p = N/5;
             answer[i] = sum>p?p:sum;
         }
-
         for(Long i:answer){
             System.out.println(i);
         }

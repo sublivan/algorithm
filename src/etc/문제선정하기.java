@@ -1,4 +1,4 @@
-package goorm;
+package etc;
 
 import java.io.*;
 import java.util.Arrays;

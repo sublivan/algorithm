@@ -34,7 +34,7 @@ public class 조이스틱 {
         for (int i = 0; i < name.length(); i++) {
             if (name.charAt(i) != 'A') {
                 int next = i +  1;
-                while (next < name.length() && name.charAt(next) == 'A') {
+                if (next < name.length() && name.charAt(next) == 'A') {
                     next++;
                 }
                 int move = 2 * i + name.length() - next;

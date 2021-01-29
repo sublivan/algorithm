@@ -30,15 +30,9 @@ public class 조이스틱 {
         int minMoveCnt = name.length() - 1;
         for (int i = 0; i < name.length(); i++) {
             if (name.charAt(i) != 'A') {
-<<<<<<< HEAD
-                int next = i +  1;
-                if (next < name.length() && name.charAt(next) == 'A') {
-                    next++;
-=======
                 int nextIdx = i + 1;
                 while (nextIdx < name.length() && name.charAt(nextIdx) == 'A') {
                     nextIdx++;
->>>>>>> d1c50d5939dd3914bd91637ac8d89ec3e431969e
                 }
                 int move = 2 * i + name.length() - nextIdx;
                 minMoveCnt = Math.min(move, minMoveCnt);

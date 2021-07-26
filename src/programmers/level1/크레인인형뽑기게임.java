@@ -1,4 +1,4 @@
-package programmers;
+package programmers.level1;
 
 //2019 카카오 개발자 겨울 인턴쉽
 import java.util.*;

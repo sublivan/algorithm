@@ -8,34 +8,62 @@ public class 가장큰수 {
         int[] numbers = {6, 10, 2};
         System.out.println(solution(numbers));
     }
+
+//    public static String solution(int[] numbers) {
+//
+//        String[] num = new String[numbers.length];
+//
+//        for(int i = 0; i < numbers.length; i++)
+//        {
+//            num[i] = String.valueOf(numbers[i]);
+//        }
+//
+//        Arrays.sort(num, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2)
+//            {
+//                return (o2 + o1).compareTo(o1 + o2);
+//            }
+//        });
+//
+//        int check = 0;
+//        String answer = "";
+//
+//        for(int i = 0; i < num.length; i++)
+//        {
+//            answer += num[i];
+//            check += Integer.parseInt(num[i]);
+//        }
+//
+//        if(check == 0)
+//        {
+//            answer = "0";
+//        }
+//
+//        return answer;
+//    }
+
     public static String solution(int[] numbers) {
-        String answer = "";
 
-        String max;
+        List<String> nums = new ArrayList<>();
 
-        String[] num = new String[numbers.length];
-        for(int i = 0; i < numbers.length; i++)
-        {
-            num[i] = String.valueOf(numbers[i]);
+        for (int number : numbers) {
+            nums.add(String.valueOf(number));
         }
-        Arrays.sort(num, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2)
-            {
-                return (o2 + o1).compareTo(o1 + o2);
-            }
+
+        Collections.sort(nums, (o1, o2) -> {
+            return (o2 + o1).compareTo(o1 + o2);
         });
-        int check = 0;
-        for(int i = 0; i < num.length; i++)
-        {
-            answer += num[i];
-            check += Integer.parseInt(num[i]);
+
+        StringBuilder answer = new StringBuilder();
+        for (String num : nums) {
+            answer.append(num);
         }
-        if(check == 0)
-        {
-            answer = "0";
+
+        if (answer.charAt(0) == '0') {
+            return "0";
         }
-        return answer;
+        return answer.toString();
     }
 }
 /*

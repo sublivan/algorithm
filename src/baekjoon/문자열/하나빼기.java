@@ -1,4 +1,5 @@
-package 문자열;/*
+package 문자열;
+/*
 두 문자열을 비교해서 하나의 문자 삽입, 삭제, 교체 해서 같게 만들 수 있는지
 ex1 : pale, ple = true
 ex2 : pales, pale = true

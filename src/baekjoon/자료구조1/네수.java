@@ -1,4 +1,4 @@
-package 자료구조1;
+package baekjoon.자료구조1;
 
 import java.io.*;
 

@@ -1,10 +1,10 @@
-package baekjoon;
+package baekjoon.문자열;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class 세로읽기 {
+public class 세로읽기10798 {
 
     static final int MAX_ROW_SIZE = 5;
     static final int MAX_COL_SIZE = 15;

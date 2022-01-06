@@ -22,7 +22,7 @@ public class 폰켓몬 {
             }
         }
 
-        int kindsSize = map.keySet().size();
+        int kindsSize = map.size();
         int maxTakePonketmonSize = nums.length /2;
 
         if (maxTakePonketmonSize  > kindsSize) {

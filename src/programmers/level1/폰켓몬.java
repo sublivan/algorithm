@@ -1,7 +1,9 @@
 package programmers.level1;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class 폰켓몬 {
     public static void main(String[] args) {
@@ -31,5 +33,13 @@ public class 폰켓몬 {
             answer = maxTakePonketmonSize;
         }
         return answer;
+    }
+
+    //스트림을 이용한 풀이
+    public int solution2(int[] nums) {
+        return Arrays.stream(nums)
+                .boxed()
+                .collect(Collectors.collectingAndThen(Collectors.toSet(),
+                        ponketmonKinds -> Math.min(ponketmonKinds.size(), nums.length / 2) ));
     }
 }

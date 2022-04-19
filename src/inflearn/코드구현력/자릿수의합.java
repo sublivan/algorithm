@@ -34,22 +34,22 @@ public class 자릿수의합 {
         }
 
         int max = Integer.MIN_VALUE;
-        int answerIndex = 0;
+        int maxNumIndex = 0;
 
         for (int i = 0; i < N; i++) {
-            int sum = digit_sum(nums[i]);
+            int now = nums[i];
+            int sum = digit_sum(now);
 
             if (sum == max) {
-                int pre = nums[answerIndex];
-                int now = nums[i];
+                int pre = nums[maxNumIndex];
 
-                answerIndex = now > pre ? i : answerIndex;
+                maxNumIndex = now > pre ? i : maxNumIndex;
             }
             if (sum >= max) {
-                answerIndex = i;
+                maxNumIndex = i;
                 max = sum;
             }
         }
-        System.out.println(nums[answerIndex]);
+        System.out.println(nums[maxNumIndex]);
     }
 }

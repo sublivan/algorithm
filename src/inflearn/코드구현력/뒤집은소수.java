@@ -26,18 +26,18 @@ public class 뒤집은소수 {
         System.out.println(sb.toString());
     }
 
-    static int reverse(int x) {
+    static int reverse(int num) {
         int result = 0;
-        while (x != 0) {
-            result = result * 10 + x % 10;
-            x /= 10;
+        while (num != 0) {
+            result = result * 10 + num % 10;
+            num /= 10;
         }
         return result;
     }
 
-    static boolean isPrime(int x) {
-        for (int i = 2; i < (int)Math.sqrt(x); i++) {
-            if (x % i == 0) {
+    static boolean isPrime(int num) {
+        for (int i = 2; i <= num/2; i++) {
+            if (num % i == 0) {
                  return false;
             }
         }

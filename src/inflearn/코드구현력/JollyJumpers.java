@@ -11,7 +11,7 @@ import java.util.Arrays;
  * 다음과 같은 수열에서 1 4 2 3 앞 뒤에 있는 숫자 차의
  * 절대 값이 각각 3 ,2, 1이므로 이 수열은 유쾌한 점퍼가 된다.
  */
-public class JoollyJumpers {
+public class JollyJumpers {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

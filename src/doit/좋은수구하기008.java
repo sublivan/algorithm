@@ -52,8 +52,6 @@ public class 좋은수구하기008 {
 			}
 		}
 		System.out.println(result);
-		
-		br.close();
 	}
 
 }

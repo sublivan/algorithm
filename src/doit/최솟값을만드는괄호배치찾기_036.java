@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
+ * [그리디]
+ * boj 11047
+ *
  * +, -, 괄호를 이용해 수식을 만들었다.
  * 이 괄호를 모두 지우고, 다시 적절히 괄호를 넣어 수식의 값을 최소로 만들고자 한다. 이 최솟값을 반환하라
  *

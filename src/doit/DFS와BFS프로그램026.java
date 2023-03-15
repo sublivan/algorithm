@@ -11,6 +11,9 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 /**
+ * [너비우선탐색]
+ * boj 1260
+ *
  * DFS와 BFS로 탐색한 결과를 출력하라
  * 방문할 수 있는 노드가 여러 개일 경우에는 노드 번호가 작은 것을 먼저 방문하라
  * 

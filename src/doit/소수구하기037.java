@@ -4,6 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * [소수구하기]
+ * boj 1929
+ *
  * M이상 N이하의 소수를 모두 출력하라
  * 입력
  * - 시작 수 M, 종료수 N

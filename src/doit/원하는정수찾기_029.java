@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 
 /**
  * [이진 탐색]
+ * boj 1920
  *
  * N개의 정수 A[1], A[2] ... A[N]이 주어져있을때 이 안에서 X라는 정수가 존재하는지 알아내라
  * 입력

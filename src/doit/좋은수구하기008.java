@@ -7,6 +7,9 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /**
+ * [투포인터]
+ * boj 1253
+ *
  * 좋은 수 :주어진 N개의 수에서 다른 두 수의 합으로 표현되는 수
  * N개의 수중 좋은 수가 총 몇개인지 구하라
  * 입력

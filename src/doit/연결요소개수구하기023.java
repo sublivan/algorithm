@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 /**
+ * [깊이우선탐색]
+ * boj 11724
+ *
  * 방향 없는 그래프가 주어졌을때 연결 요소의 개수를 구하라
  *
  * 입력

@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
+ * [다익스트라]
+ * boj 1753
+ *
  * 에지의 가중치가 10 이하의 자연수인 방향 그래프가 있다.
  * 이 그래프의 시작점에서 다른 모든 노드로의 최단경로를 구하라
  *

@@ -8,6 +8,9 @@ import java.util.StringTokenizer;
 
 
 /**
+ * [구간합]
+ * boj 11659
+ *
  * 수 N개가 주어졌을때 i번째 수에서 j번째 수까지의 합을 구하라
  * 입력
  * - 첫번째줄: 수의 개수 N, 합을 구해야하는 횟수 M

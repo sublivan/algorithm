@@ -6,6 +6,9 @@ import java.util.LinkedList;
 import java.util.StringTokenizer;
 
 /**
+ * [슬라이딩 윈도우]
+ * boj 11003
+ *
  * N개의 수와 L이 주어진다.
  * Ai-L+1 ~ Ai중 최솟값을 Di라고 할 때 D에 저장된 수를 출력하라.
  * (i <= 0 인 Ai는 무시하라)

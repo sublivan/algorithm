@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
-* BOJ 2018
-*/
+ * BOJ 10986
+ */
 public class 나머지합구하기005 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

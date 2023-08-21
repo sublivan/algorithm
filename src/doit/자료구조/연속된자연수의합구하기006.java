@@ -3,6 +3,7 @@ package doit.자료구조;
 import java.util.Scanner;
 
 /**
+ * BOJ 2018
  * 투 포인터
  * sum > N  : sum = sum-start_index; start_index++
  * sum < N  : end_index++; sum = sum + end_index

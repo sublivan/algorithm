@@ -16,28 +16,19 @@ public class 나머지합구하기005 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
-        int[] sums = new int[N];
-
         st = new StringTokenizer(br.readLine());
-        sums[0] = Integer.parseInt(st.nextToken());
-        for (int i = 1; i < N; i++) {
-            sums[i] = (sums[i-1] + Integer.parseInt(st.nextToken())) % M;
+
+        int sum = 0;
+        long[] calCnts = new long[M];
+        for (int i = 0; i < N; i++) {
+            sum = (sum + Integer.parseInt(st.nextToken())) % M;
+            calCnts[sum]++;
         }
 
-        int answer = 0;
-        int[] calCnts = new int[M];
-        int zero = 0;
-        for (Integer remainder : sums) {
-            if (remainder == 0) {
-                zero++;
-            }
-            calCnts[remainder]++;
+        long answer = calCnts[0];
+        for (long calCnt : calCnts) {
+            answer += (calCnt * (calCnt - 1) / 2);
         }
-
-        for (Integer calCnt : calCnts) {
-            answer = answer + (calCnt * (calCnt - 1) / 2);
-        }
-        answer += zero;
 
         System.out.println(answer);
     }
